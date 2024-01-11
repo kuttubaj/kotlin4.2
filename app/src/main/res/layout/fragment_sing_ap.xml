@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.fragment.SingApFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/gray" />
+
+    <TextView
+        android:id="@+id/vhod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25sp"
+        android:text="Вход"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:text="Добро пожаловать"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/opisanie"
+        android:layout_width="138sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Выполните вход или зарегестрируйтесь"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/conteinerKnopok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/okruglenieedittexta"
+            android:hint="Введите ваше имя"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/et_pochta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/okruglenieedittexta"
+            android:hint="Введите вашу почту"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/et_parol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/okruglenieedittexta"
+            android:hint="Введите пароль"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/et_parol_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/okruglenieedittexta"
+            android:hint="Подтвердите пароль"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/okruglenieedittexta"
+            android:padding="15dp"
+            android:text="Войти"
+            android:textStyle="bold"
+            app:backgroundTint="@color/orange" />
+
+
+    </LinearLayout>
+</FrameLayout>
